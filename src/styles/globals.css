@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply h-full m-0 p-0;
+    font-family: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  }
+
+  #root {
+    @apply h-full;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  select option:disabled {
+    @apply text-slate-300;
+  }
+}
